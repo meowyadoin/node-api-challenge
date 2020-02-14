@@ -9,10 +9,8 @@ there is no data on that route, just write some code, you'll sort it out… don'
 I need this code, but don't know where, perhaps should make some middleware, don't worry, just hack it
 Go code!
 */
-const server = require('./server');
+const server = require("./server.js");
 
-const port = process.env.PORT || 7000;
-
-server.listen(port, () => {
-    console.log(`\n ** server listening on port ${port} ** \n`);
+server.listen(7000, () => {
+    console.log("server running on http://localhost:7000")
 });

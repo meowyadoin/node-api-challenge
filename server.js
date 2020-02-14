@@ -1,14 +1,19 @@
-const express = require('express');
-const actionRouter = require('./data/routers/actionRouter');
-const projectRouter = require('./data/routers/projectRouter');
+const express = require("express");
+
+const projectsRouter = require("./projects/projectsRouter.js");
+
+const actionsRouter = require("./actions/actionsRouter.js");
+
 const server = express();
 
 server.use(express.json());
-server.use('/api/actions', actionRouter);
-server.use('/api/projects', projectRouter);
 
-server.get('/', (req, res) => {
-    res.send('<h1>Sprint challenge time!</h1>')
+server.use("/api/projects", projectsRouter);
+
+server.use("/api/actions", actionsRouter);
+
+server.get("/", (req, res) => {
+  res.send("sprint challenge 2/14/20!");
 });
 
 module.exports = server;

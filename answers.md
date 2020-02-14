@@ -1,25 +1,19 @@
 ## Mention two parts of Express that you learned about this week.
 
-Express is a JavaScript framework. It is to the backend like React is to the frontend.
-It adds support for things like routing and middleware.
- 
- ## Describe Middleware?
+  Express middleware and Express' server-side routing
 
-Middleware are small functions that perform a necessary task and extend the features provided by express. Things like logging and authentication are often handled by middleware. Middleware can be global or local.
+## Describe Middleware?
 
- ## Describe a Resource?
+Function that does some work for you before it gets to the main actions. It can be to check for good requests, check for authentication, and anything else you design custom middleware for.  
 
-This is referring to designing a RESTful API. A resource is:
+## Describe a Resource?
 
-Accessible via a unique URI
-potentially represented in multiple ways
-managed via HTTP methods
-And a resource's communication happens over a stateless protocol (HTTP)
+  Data that is stored in a database; hardware or software that is accessible by the computer, network, or another object connected to a computer. Pretty much everything is a resource.
 
- ## What can the API return to help clients know if a request was successful?
+## What can the API return to help clients know if a request was successful?
 
-An api can return a status like 200 or 201 that communicates the request was successful.
+  Status codes in the 200s or returning the object.
 
- ## How can we partition our application into sub-applications?
+## How can we partition our application into sub-applications?
 
-Express Router is a way to partition an app into sub-applications. It's a great way to keep things clean and organized based on URIs.
+  Server-side routing. Set up a router for each section of resources you have.
